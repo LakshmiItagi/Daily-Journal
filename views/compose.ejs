@@ -1,0 +1,26 @@
+<%- include("partials/header"); -%> <!-- since header and footer are present in partials folder-->
+
+<h1>Compose</h1>
+ <!-- from bootstrap forms -->
+<form action="/compose" method="post">
+  <div class="form-group">
+    <label forId="title">Title</label>
+   <input type="text" class="form-control" id="title" name="blogTitle"/>
+  </div>
+  <div class="form-group">
+    <label forId="blog">Post</label>
+    <textarea name="blogPost" id="blog"class="form-control" rows="5" cols="30"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+  <!-- <form action="/compose" method="post" class="container-fluid">
+  <label forId="title">Title</label>
+ <input type="text" id="title" name="blogTitle"/>
+ <label forId="blog">Post</label>
+ <textarea name="blog" id="blog" rows="5" cols="30"></textarea> -->
+
+
+ <!-- <button type="Submit" name="publish">Publish</button>
+</form> -->
+<%- include("partials/footer"); -%>
